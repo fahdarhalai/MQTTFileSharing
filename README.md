@@ -22,11 +22,11 @@ The file sharing is performed in the following steps:
   - Receiving the transmission completion aknowledgement
   - Sending the receipt aknowledgement
 ## Setup
-1- Install paho-mqtt package:
+1. Install paho-mqtt package:
 ```pip install paho-mqtt```
-2- Clone the repository:
+2. Clone the repository:
 ```git clone https://github.com/fahdarhalai/MQTTFileSharing```
-3- Run the scripts in different terminals or in different machines(no order is required):
+3. Run the scripts in different terminals or in different machines(no order is required):
 ```python sender.py```
 ```python receiver.py```
 You will be prompted to enter a private key(should not contain '+' or '#' characters), it is used to make sure that only the receiver who has the same key, will be allowed to receive the file.
