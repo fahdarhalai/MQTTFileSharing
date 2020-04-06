@@ -2,12 +2,20 @@ import paho.mqtt.publish as publish
 import paho.mqtt.client as mqtt
 import os, math, json, re
 
-pattern = re.compile(".*[+#].*")
+print("\n\n")
+print("███████╗███████╗███╗   ██╗██████╗ ███████╗██████╗ ")
+print("██╔════╝██╔════╝████╗  ██║██╔══██╗██╔════╝██╔══██╗")
+print("███████╗█████╗  ██╔██╗ ██║██║  ██║█████╗  ██████╔╝")
+print("╚════██║██╔══╝  ██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗")
+print("███████║███████╗██║ ╚████║██████╔╝███████╗██║  ██║")
+print("╚══════╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝")
+print("\n\n")
+print("---------------------WELCOME---------------------")
+print("Make sure the file you are about to transmit is")
+print("         located in the same directory.")
+print("-------------------------------------------------")
 
-print("-------------------WELCOME-------------------")
-print("Make sure the file you are about to transmit")
-print("is located in the same directory.")
-print("---------------------------------------------")
+pattern = re.compile(".*[+#].*")
 
 key = ""
 while bool(pattern.match(key)) or key == "":
@@ -57,7 +65,6 @@ def transmit():
 
 		print("\tSending chunk ({0})...".format(counter))
 		publish.single(fileTopic, byteArr, hostname="mqtt.eclipse.org")
-		print("\t\tChunk sent")
 
 		fileContent = f.read(10240)
 		counter += 1
