@@ -22,9 +22,18 @@ The file sharing is performed in the following steps:
   - Receiving the transmission completion aknowledgement
   - Sending the receipt aknowledgement
 ## Setup
-In order to work with MQTT, you must first download the ```paho-mqtt``` package:
-```
-pip install paho-mqtt
-```
-Now you can clone my repository using the ```git clone``` command. Run the sender's script, and the receiver's script (the order doesn't matter). You will be prompted to enter a private key, it is used to make sure that only the receiver who has the same key, will be able to receive the file.
+1- Install paho-mqtt package:
+```pip install paho-mqtt```
+2- Clone the repository:
+```git clone https://github.com/fahdarhalai/MQTTFileSharing```
+3- Run the scripts in different terminals or in different machines(no order is required):
+```python sender.py```
+```python receiver.py```
+You will be prompted to enter a private key(should not contain '+' or '#' characters), it is used to make sure that only the receiver who has the same key, will be allowed to receive the file.
 ## Test
+Running both scripts on my machine:
+![Capture](https://user-images.githubusercontent.com/41004675/78612597-a2fef480-7861-11ea-8339-47c7ebfdab35.PNG)
+
+Running the receiver script on my phone using Termux terminal emulator:
+![Screenshot_20200406-235705](https://user-images.githubusercontent.com/41004675/78612990-9929c100-7862-11ea-9cfc-b65d0bdbd77d.jpg)
+![Screenshot_20200406-235714](https://user-images.githubusercontent.com/41004675/78612996-9dee7500-7862-11ea-93fa-c1677009ea97.jpg)
