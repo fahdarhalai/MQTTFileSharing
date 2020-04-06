@@ -4,12 +4,20 @@ import time, json
 import _thread as thread
 import re
 
-pattern = re.compile(".*[+#].*")
+print("\n\n")
+print("██████╗ ███████╗ ██████╗███████╗██╗██╗   ██╗███████╗██████╗ ")
+print("██╔══██╗██╔════╝██╔════╝██╔════╝██║██║   ██║██╔════╝██╔══██╗")
+print("██████╔╝█████╗  ██║     █████╗  ██║██║   ██║█████╗  ██████╔╝")
+print("██╔══██╗██╔══╝  ██║     ██╔══╝  ██║╚██╗ ██╔╝██╔══╝  ██╔══██╗")
+print("██║  ██║███████╗╚██████╗███████╗██║ ╚████╔╝ ███████╗██║  ██║")
+print("╚═╝  ╚═╝╚══════╝ ╚═════╝╚══════╝╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝")
+print("\n\n")
+print("---------------------------WELCOME--------------------------")
+print("In order to receive the file you must have the same exact")
+print("         key the sender used while trasmitting.")
+print("------------------------------------------------------------")
 
-print("-------------------WELCOME-------------------")
-print("In order to receive the file you must have")
-print("the same key the sender used in transmition.")
-print("---------------------------------------------")
+pattern = re.compile(".*[+#].*")
 
 key = ""
 while bool(pattern.match(key)) or key == "":
