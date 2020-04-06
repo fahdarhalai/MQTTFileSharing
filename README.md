@@ -1,5 +1,5 @@
 # MQTTFileSharing
-MQTT File Sharing scripts (receiver script &amp; sender script) written in Python
+MQTT File Sharing scripts over TCP written in Python.
 
 ## Introduction
 This project is a small file sharing system, that uses MQTT protocol to share binary data over internet. The MQTT broker is provided by eclipse, and can be accessed at mqtt.eclipse.org on port 1883 over unencrypted TCP (or 8883 for communication over encrypted TCP). Any MQTT broker can be a good replacement since the eclipse public broker is little bit slow.
