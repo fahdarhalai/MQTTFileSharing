@@ -1,4 +1,4 @@
-# MQTTFileSharing
+# MQTT File Sharing System
 MQTT File Sharing system over TCP written in Python.
 
 ## Introduction
