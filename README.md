@@ -4,6 +4,10 @@ MQTT File Sharing scripts (receiver script &amp; sender script) written in Pytho
 ## Introduction
 This project is a small file sharing system, that uses MQTT protocol to share binary data over internet. The MQTT broker is provided by eclipse, and can be accessed at mqtt.eclipse.org on port 1883 over unencrypted TCP (or 8883 for communication over encrypted TCP). Any MQTT broker can be a good replacement since the eclipse public broker is little bit slow.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41004675/78615163-a8137200-7868-11ea-9c6a-f52e9c6b01ab.PNG" width="85%">  
+</p>
+
 The file sharing is performed in the following steps:
 - From sender's view point:
   - Waiting for the receiver to connect
@@ -21,7 +25,7 @@ The file sharing is performed in the following steps:
   - Writing each chunk in the file
   - Receiving the transmission completion aknowledgement
   - Sending the receipt aknowledgement
-## Setup
+## Installation
 1. Install paho-mqtt package:<br>
 ```pip install paho-mqtt```
 2. Clone the repository:<br>
@@ -38,7 +42,7 @@ Running both scripts on my machine:
 
 Running the receiver script on my phone using Termux terminal emulator:
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/41004675/78612990-9929c100-7862-11ea-9cfc-b65d0bdbd77d.jpg" align="middle" width="65%">
+  <img src="https://user-images.githubusercontent.com/41004675/78612990-9929c100-7862-11ea-9cfc-b65d0bdbd77d.jpg" width="65%">
   <br><br>
-  <img src="https://user-images.githubusercontent.com/41004675/78612996-9dee7500-7862-11ea-93fa-c1677009ea97.jpg" align="middle" width="65%">
+  <img src="https://user-images.githubusercontent.com/41004675/78612996-9dee7500-7862-11ea-93fa-c1677009ea97.jpg" width="65%">
 </p>
