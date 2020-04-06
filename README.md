@@ -32,7 +32,8 @@ The file sharing is performed in the following steps:
 You will be prompted to enter a private key(should not contain '+' or '#' characters), it is used to make sure that only the receiver who has the same key, will be allowed to receive the file.
 ## Test
 Running both scripts on my machine:
-![Capture](https://user-images.githubusercontent.com/41004675/78612597-a2fef480-7861-11ea-8339-47c7ebfdab35.PNG)
+
+<img src="https://user-images.githubusercontent.com/41004675/78612597-a2fef480-7861-11ea-8339-47c7ebfdab35.PNG" align="middle" with="75%">
 
 Running the receiver script on my phone using Termux terminal emulator:
 ![Screenshot_20200406-235705](https://user-images.githubusercontent.com/41004675/78612990-9929c100-7862-11ea-9cfc-b65d0bdbd77d.jpg)
