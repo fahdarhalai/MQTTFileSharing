@@ -39,6 +39,6 @@ Running both scripts on my machine:
 Running the receiver script on my phone using Termux terminal emulator:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/41004675/78612990-9929c100-7862-11ea-9cfc-b65d0bdbd77d.jpg" align="middle" width="65%">
-  <br>
+  <br><br>
   <img src="https://user-images.githubusercontent.com/41004675/78612996-9dee7500-7862-11ea-93fa-c1677009ea97.jpg" align="middle" width="65%">
 </p>
