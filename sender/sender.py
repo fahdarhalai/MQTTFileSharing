@@ -51,7 +51,7 @@ def transmit():
 	filesize = round(os.stat(filename).st_size / 1024.0, 2)
 	nbrChunks = math.ceil(os.stat(filename).st_size / 10240)
 
-	fileinfo["name"] = filename
+	fileinfo["name"] = os.path.basename(filename)
 	fileinfo["size"] = filesize
 	fileinfo["chunks"] = nbrChunks
 
